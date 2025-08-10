@@ -1,4 +1,11 @@
 # NLP Project
+
+To run this you need to create a .env file and put in it
+```python
+GEMINI_API_KEY=yours_key
+```
+
+
 For Image recognition later - https://ai.google.dev/gemini-api/docs/image-understanding
 
 The basic API doc - https://ai.google.dev/gemini-api/docs/api-key
