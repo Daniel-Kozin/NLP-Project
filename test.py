@@ -1,7 +1,18 @@
 import os
 from dotenv import load_dotenv
+from google import genai
+from google.genai import types
 
-# Get the API KEY
-load_dotenv()  # Load variables from .env file
+# Load API key from .env file
+load_dotenv()
 api_key = os.getenv("API_KEY")
-print(api_key)
+
+client = genai.Client(api_key=api_key)
+
+response = client.models.generate_content(
+    model="gemini-2.5-flash", contents="Explain how AI works in a few words",
+    config=types.GenerateContentConfig(
+        thinking_config=types.ThinkingConfig(thinking_budget=0) # Disables thinking
+    )
+)
+print(response.text)
