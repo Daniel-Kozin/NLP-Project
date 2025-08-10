@@ -1,0 +1,2 @@
+# Remove env files from GIT
+.env
