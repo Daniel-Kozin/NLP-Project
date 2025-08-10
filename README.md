@@ -1,7 +1,7 @@
 # NLP Project
 
 To run this you need to create a .env file and put in it
-```python
+```env
 GEMINI_API_KEY=yours_key
 ```
 
