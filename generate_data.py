@@ -18,19 +18,19 @@ def person_data(x, count=None):
         random_item = random.choice(eye_count)
         if count is None:
             count = random_item
-        return f"{count} pairs of eyes"
+        return f"{count} eyes"
 
     elif x == "glasses":
         random_item = random.choice(glasses_count)
         if count is None:
             count = random_item
-        return f"{count} pairs of glasses"
+        return f"{count} glasses"
 
     elif x == "fingers":
         random_item = random.choice(fingers_count)
         if count is None:
             count = random_item
-        return f"{count} fingers"
+        return f"{count} fingers on one hand"
 
     elif x == "ears":
         random_item = random.choice(ears_count)
@@ -85,16 +85,18 @@ def person_data_example(amount_of_items: int, item=None):
         print(line)
 
         if not line_exists(data_path, line):
-            json_obj = {"description": line}
+            json_obj = {"description": line, "data_type": "person"}
             f.write(json.dumps(json_obj) + "\n")
         if line_exists(data_path, line):
             print("\033[94mThis line already exists\033[0m")
 
 
-for i in range(20):
+
+for i in range(15):
     person_data_example(1)
-for i in range(10):
+for i in range(2):
     person_data_example(2)
-for i in range(5):
-    person_data_example(3)
+
+person_data_example(3)
+person_data_example(4)
 
