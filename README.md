@@ -2,7 +2,7 @@
 
 To run this you need to create a .env file and put in it
 ```env
-GEMINI_API_KEY=yours_key
+GEMINI_API_KEY=your_key
 ```
 
 

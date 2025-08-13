@@ -32,33 +32,49 @@ def eval_all():
 
                 if data_type == 'person':
                     prompt = ("Your task is to generate a full-body close up photograph of a"
-                              " person which describes the following: ") + line + ("\nMake"
+                              " person which describes the following:\n") + line + ("\nMake"
                               " it as realistic and clear as possible, Don't stack items together.")
+
+                    # d+ exactly 1 number, s+ - whitespace, ([A-Za-z]+ - group of letters
+                    objs = re.findall(r'\d+\s+([A-Za-z]+)', line)
+                    real_data = re.findall(r'\d+', line)
+                elif data_type == 'clock':
+                    prompt = "Your task is to generate a the following:\n" + line + "\nMake it as clear as possible"
+
+                    # b - boundary , d{2} - exactly 2 digits
+                    real_data = re.findall(r"\b\d{2}:\d{2}\b", line)
 
                 prompt_answer(prompt, idx=(idx+1), max_index=total_rows)
 
-                objs = re.findall(r'\d+\s+([A-Za-z]+)', line)
-                numbers = re.findall(r'\d+', line)
+                if data_type == 'person':
+                    question = "\nHow many of the following items appear in the picture?"
+                    for i, word in enumerate(objs):
+                        question += f"\n{i + 1}. {word}"
+                    question += (f"\nAnswer JUST in numbers based on the order of appearance."
+                                 f"\nYou should take as much time as you can to be 100% sure with your answer."
+                                 f"\nDon't think those are realistic photos, count everything with caution this may seem"
+                                 f" wrong.")
 
-                question = "\nHow many of the following items appear in the picture?"
-                for i, word in enumerate(objs):
-                    question += f"\n{i + 1}. {word}"
-                question += (f"\nAnswer JUST in numbers based on the order of appearance."
-                             f"\nYou should take as much time as you can to be 100% sure with your answer."
-                             f"\nDon't think those are realistic photos, count everything with caution this may seem"
-                             f" wrong.")
+                elif data_type == 'clock':
+                    question = ("\nWhat is the exact time the clock shows?\nAnswer just the time in the format "
+                                "HH:MM.\n"
+                                "You should take as much time as you can to be 100% sure with your answer.")
 
                 prompt = "your task is to answer the following question: " + question
 
                 answer = model_answer(prompt=prompt, img_path=f'gemini_img/{idx + 1}_out_of_{total_rows}.png')
 
-                numbers_in_answer = re.findall(r'\d+', answer)
-                print(f"The numbers the model predicted are: {numbers_in_answer}\n")
+                if data_type == 'person':
+                    model_ans = re.findall(r'\d+', answer)
+                    print(f"The numbers the model predicted are: {model_ans}\n")
+                elif data_type == 'clock':
+                    model_ans = re.findall(r'\b\d{2}:\d{2}\b', answer)
+                    print(f"The time the model predicted is: {model_ans}\n")
 
                 flag = True
                 # zip will work because they have the same size
-                for real_data, answer in zip(numbers, numbers_in_answer):
-                    if real_data != answer:
+                for real, answer in zip(real_data, model_ans):
+                    if real != answer:
                         print("\033[1;31mThe Model is wrong\033[0m")
                         flag = False
                         break
@@ -121,3 +137,5 @@ def eval_single():
 
     print("\033[1;32mThe Model is right\033[0m")
     return True
+
+#eval_single()
