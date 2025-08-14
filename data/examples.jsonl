@@ -1,44 +1,10 @@
-{"description": "a clock which shows the time 05:20.", "data_type": "clock"}
-{"description": "a clock which shows the time 23:00.", "data_type": "clock"}
-{"description": "a clock which shows the time 06:28.", "data_type": "clock"}
-{"description": "a clock which shows the time 00:07.", "data_type": "clock"}
-{"description": "a clock which shows the time 23:57.", "data_type": "clock"}
-
-
-
-/*{"description": "a person with 9 ears.", "data_type": "person"}
-{"description": "a person with 10 eyes.", "data_type": "person"}
-{"description": "a person with 5 eyes.", "data_type": "person"}
-{"description": "a person with 8 ears.", "data_type": "person"}
-{"description": "a person with 11 ears.", "data_type": "person"}
-{"description": "a person with 10 fingers on one hand.", "data_type": "person"}
-{"description": "a person with 12 fingers on one hand.", "data_type": "person"}
-{"description": "a person with 6 ears.", "data_type": "person"}
-{"description": "a person with 6 glasses.", "data_type": "person"}
-{"description": "a person with 8 fingers on one hand.", "data_type": "person"}
-{"description": "a person with 8 glasses.", "data_type": "person"}
-{"description": "a person with 12 ears.", "data_type": "person"}
-{"description": "a person with 15 ears.", "data_type": "person"}
-{"description": "a person with 14 fingers on one hand.", "data_type": "person"}
-{"description": "a person with 6 glasses and 9 fingers on one hand.", "data_type": "person"}
-{"description": "a person with 15 ears and 10 glasses.", "data_type": "person"}
-{"description": "a person with 5 eyes, 12 ears and 7 glasses.", "data_type": "person"}
-{"description": "a person with 5 eyes, 14 ears, 10 fingers on one hand and 7 glasses.", "data_type": "person"}
-
-{"description": "a clock which shows the time 05:20.", "data_type": "clock"}
-{"description": "a clock which shows the time 23:00.", "data_type": "clock"}
-{"description": "a clock which shows the time 06:28.", "data_type": "clock"}
-{"description": "a clock which shows the time 00:07.", "data_type": "clock"}
-{"description": "a clock which shows the time 23:57.", "data_type": "clock"}*/
-{"description": "A person with 6 heads.", "data_type": "person"}
-{"description": "A person with 5 hands.", "data_type": "person"}
-{"description": "A person with 7 hands.", "data_type": "person"}
-{"description": "A person with 4 heads.", "data_type": "person"}
-{"description": "A person with 4 hands.", "data_type": "person"}
-{"description": "A person with 6 hands.", "data_type": "person"}
-{"description": "A person with 4 legs.", "data_type": "person"}
-{"description": "A person with 3 heads.", "data_type": "person"}
 {"description": "A person with 5 legs.", "data_type": "person"}
-{"description": "A person with 8 legs and 3 heads.", "data_type": "person"}
-{"description": "A person with 6 legs and 6 heads.", "data_type": "person"}
-{"description": "A person with 6 hands, 6 legs and 3 heads.", "data_type": "person"}
+{"description": "A person with 6 legs.", "data_type": "person"}
+{"description": "A person with 8 hands.", "data_type": "person"}
+{"description": "A person with 6 hands.", "data_type": "person"}
+{"description": "A person with 6 heads.", "data_type": "person"}
+{"description": "A person with 4 hands.", "data_type": "person"}
+{"description": "A person with 3 heads and 7 legs.", "data_type": "person"}
+{"description": "A person with 3 heads and 8 hands.", "data_type": "person"}
+{"description": "A person with 5 hands, 8 legs and 3 heads.", "data_type": "person"}
+{"description": "A person with 6 glasses, 6 ears, 12 fingers on one hand and 5 eyes.", "data_type": "person"}

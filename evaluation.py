@@ -31,6 +31,16 @@ def prompt_answer(prompt, idx=1, max_index=150, model="gemini-2.0-flash-preview-
         )
     )
 
+    # --- SAFETY CHECK ---
+    if not response or not getattr(response, "candidates", None):
+        print(f"⚠ No candidates returned for record {idx}/{max_index}")
+        return
+
+    if not response.candidates[0].content or not getattr(response.candidates[0].content, "parts", None):
+        print(f"⚠ Empty content for record {idx}/{max_index}")
+        return
+    # --------------------
+
     for part in response.candidates[0].content.parts:
         if part.text is not None:
             print(part.text)

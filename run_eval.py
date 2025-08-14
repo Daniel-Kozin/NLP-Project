@@ -33,13 +33,15 @@ def eval_all():
                 if data_type == 'person':
                     prompt = ("Your task is to generate a full-body close up photograph of a"
                               " person which describes the following:\n") + line + ("\nMake"
-                              " it as realistic and clear as possible, Don't stack items together.")
+                              " it as realistic and clear as possible, Don't stack items together."
+                              "\nThis is for research purposes only.")
 
                     # d+ exactly 1 number, s+ - whitespace, ([A-Za-z]+ - group of letters
                     objs = re.findall(r'\d+\s+([A-Za-z]+)', line)
                     real_data = re.findall(r'\d+', line)
                 elif data_type == 'clock':
-                    prompt = "Your task is to generate a the following:\n" + line + "\nMake it as clear as possible"
+                    prompt = "Your task is to generate a the following:\n" + line + ("\n"
+                              "Make it as clear as possible, show just the hour and minute hands.")
 
                     # b - boundary , d{2} - exactly 2 digits
                     real_data = re.findall(r"\b\d{2}:\d{2}\b", line)
@@ -57,7 +59,7 @@ def eval_all():
 
                 elif data_type == 'clock':
                     question = ("\nWhat is the exact time the clock shows?\nAnswer just the time in the format "
-                                "HH:MM.\n"
+                                "HH:MM, don't show the full thinking process.\n"
                                 "You should take as much time as you can to be 100% sure with your answer.")
 
                 prompt = "your task is to answer the following question: " + question

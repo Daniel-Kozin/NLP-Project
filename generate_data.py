@@ -10,6 +10,10 @@ hands_count = [i for i in range(4,9)]
 legs_count = [i for i in range(4,9)]
 heads_count = [i for i in range(3,7)]
 
+# hands are bad - the guessing model gets lost on them
+# fingers are always gen as 5/6 but the guessing model cant guess 6
+# eyes for big numbers are bad the guessing model cant guess the exact num
+
 
 items = ["eyes", "glasses", "fingers", "ears"]
 general_items = ["hands", "legs", "heads"]
@@ -126,7 +130,7 @@ def time_example(hour, minute):
 
     date_type = "clock"
     time = f"{hour}:{minute}"
-    line = "A clock which shows the time " + time + "."
+    line = "A analog clock which shows the time " + time + "."
 
     print(line)
 
@@ -150,5 +154,5 @@ for i in range(2):
    person_data_example(general_items, 2)
 
 person_data_example(general_items, 3)
-#person_data_example(items, 4)
+person_data_example(items, 4)
 
