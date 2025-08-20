@@ -1,10 +1,1 @@
-{"description": "A person with 5 legs.", "data_type": "person"}
-{"description": "A person with 6 legs.", "data_type": "person"}
-{"description": "A person with 8 hands.", "data_type": "person"}
-{"description": "A person with 6 hands.", "data_type": "person"}
-{"description": "A person with 6 heads.", "data_type": "person"}
-{"description": "A person with 4 hands.", "data_type": "person"}
-{"description": "A person with 3 heads and 7 legs.", "data_type": "person"}
-{"description": "A person with 3 heads and 8 hands.", "data_type": "person"}
-{"description": "A person with 5 hands, 8 legs and 3 heads.", "data_type": "person"}
-{"description": "A person with 6 glasses, 6 ears, 12 fingers on one hand and 5 eyes.", "data_type": "person"}
+{"description": "A person with 100 hands.", "data_type": "person"}

@@ -91,7 +91,7 @@ def person_data_example(objs, amount_of_items: int, item=None):
         # single objects in a prompt
         if n == 1:
             if item is None:
-                print("\033[91mYou forgot to specify an item?\033[0m")
+                print("\033[91mYou forgot to specify count?\033[0m")
                 item = random.choice(objs)
             line = "A person with " + sen_create(item) + "."
         # 2 objects in a prompt
@@ -130,7 +130,7 @@ def time_example(hour, minute):
 
     date_type = "clock"
     time = f"{hour}:{minute}"
-    line = "A analog clock which shows the time " + time + "."
+    line = "An analog clock which shows the time " + time + "."
 
     print(line)
 
@@ -142,17 +142,8 @@ def time_example(hour, minute):
         if line_exists(data_path, line):
             print("\033[94mThis line already exists\033[0m")
 
-for i in range(5):
-    min = random.choice(minutes)
-    hour = random.choice(hours)
-    time_example(hour, min)
+for i in range(10):
+    person_data_example(items, 1)
 
-
-for i in range(15):
-   person_data_example(general_items, 1)
-for i in range(2):
-   person_data_example(general_items, 2)
-
-person_data_example(general_items, 3)
-person_data_example(items, 4)
-
+for i in range(10):
+    person_data_example(general_items, 1)

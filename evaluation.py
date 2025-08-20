@@ -41,6 +41,8 @@ def prompt_answer(prompt, idx=1, max_index=150, model="gemini-2.0-flash-preview-
         return
     # --------------------
 
+    #os.makedirs("gemini_img", exist_ok=True)
+
     for part in response.candidates[0].content.parts:
         if part.text is not None:
             print(part.text)

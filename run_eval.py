@@ -16,7 +16,6 @@ def count_rows(file_path):
     return row_count
 
 def eval_all():
-
     total_rows = count_rows(data_path)
     right = 0
     with open(data_path, 'r', encoding='utf-8') as f:
@@ -93,7 +92,6 @@ def eval_all():
     return acc
 
 eval_all()
-
 
 
 def eval_test():
