@@ -1,1 +1,12 @@
-{"description": "A person with 100 hands.", "data_type": "person"}
+{"description": "A person with 11 fingers (including thumbs) on one hand.", "data_type": "person"}
+{"description": "A person with 10 eyes.", "data_type": "person"}
+{"description": "A person with 8 ears.", "data_type": "person"}
+{"description": "A person with 7 glasses.", "data_type": "person"}
+{"description": "A person with 9 ears.", "data_type": "person"}
+{"description": "A person with 3 legs.", "data_type": "person"}
+{"description": "A person with 5 legs.", "data_type": "person"}
+{"description": "A person with 3 hands.", "data_type": "person"}
+{"description": "A person with 8 legs.", "data_type": "person"}
+{"description": "A person with 3 heads.", "data_type": "person"}
+{"description": "An analog clock which shows the time 03:20.", "data_type": "clock"}
+{"description": "An analog clock which shows the time 06:30.", "data_type": "clock"}

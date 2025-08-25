@@ -2,13 +2,14 @@ import random
 import json
 import os
 
-eye_count = [i for i in range(1,9)]
-glasses_count = [i for i in range(1,9)]
-fingers_count = [i for i in range(1,10)]
-ears_count = [i for i in range(1,10)]
-hands_count = [i for i in range(1,9)]
-legs_count = [i for i in range(1,9)]
-heads_count = [i for i in range(1,7)]
+eye_count = [i for i in range(4,12)]
+glasses_count = [i for i in range(4,9)]
+fingers_count = [i for i in range(6,15)]
+ears_count = [i for i in range(3,10)]
+hands_count = [i for i in range(3,10)]
+legs_count = [i for i in range(3,10)]
+heads_count = [i for i in range(2,7)]
+feet_count = [i for i in range(3,7)]
 
 # hands are bad - the guessing model gets lost on them
 # fingers are always gen as 5/6 but the guessing model cant guess 6
@@ -16,7 +17,7 @@ heads_count = [i for i in range(1,7)]
 
 
 items = ["eyes", "glasses", "fingers", "ears"]
-general_items = ["hands", "legs", "heads"]
+general_items = ["hands", "legs", "heads", "feet"]
 
 hours = list(range(0, 10)) + list(range(11, 24))
 minutes = list(range(0, 60))
@@ -65,6 +66,12 @@ def sen_create(x, count=None):
         if count is None:
             count = random_item
         return f"{count} heads"
+
+    elif x == "feet":
+        random_item = random.choice(feet_count)
+        if count is None:
+            count = random_item
+        return f"{count} feet"
 
     return ""
 
@@ -142,23 +149,12 @@ def time_example(hour, minute):
         if line_exists(data_path, line):
             print("\033[94mThis line already exists\033[0m")
 
-for i in range(7):
+for i in range(5):
     person_data_example(items, 1)
 
-for i in range(7):
-    person_data_example(items, 2)
+for i in range(5):
+    person_data_example(general_items, 1)
 
-for i in range(7):
-    person_data_example(items, 3)
+time_example(3,20)
+time_example(6,30)
 
-for i in range(1):
-    time_example(10, 10)
-
-for i in range(1):
-    time_example(6, 0)
-
-for i in range(1):
-    time_example(3, 15)
-
-for i in range(1):
-    time_example(12, 30)

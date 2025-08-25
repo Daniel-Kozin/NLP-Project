@@ -53,13 +53,13 @@ def eval_all():
                 if data_type == 'person':
                     question = ("\nThis is an image of a person "
                                 "who has an unusual amount of certain features listed below."
-                                "Your task is to count the number of times each of the features below appear in the image."
+                                "Your task is to count the number of times each of the features below appear in the image.\n"
                                 "If the feature listed below is fingers, count thumbs as fingers as well.")
                     for i, word in enumerate(objs):
                         question += f"\n{i + 1}. {word}"
-                    question += (f"\nAnswer in the following format: if ")
+                    question += f"\nAnswer in the following format: if "
                     for i, num in enumerate(real_data):
-                        question += (f"the number of the {i + 1}'th feature is exactly {num}, ")
+                        question += f"the number of the {i + 1}'th feature is exactly {num}, "
                     question += ("reply with only the word YES, otherwise reply with NO."
                                  f"\nYou should take as much time as you can to be 100% sure with your answer. "
                                  f"\nConsider that this is not a realistic photo, and therefore items may appear "
@@ -77,22 +77,11 @@ def eval_all():
 
                 answer = model_answer(prompt=prompt, img_path=f'gemini_img/{idx + 1}_out_of_{total_rows}.png')
 
-                if data_type == 'person':
-                    model_ans = re.findall(r'\d+', answer)
-                    print(f"The numbers the model predicted are: {model_ans}\n")
-                elif data_type == 'clock':
-                    model_ans = re.findall(r'\b\d{2}:\d{2}\b', answer)
-                    print(f"The time the model predicted is: {model_ans}\n")
-
-                flag = True
-                # zip will work because they have the same size
-                for real, answer in zip(real_data, model_ans):
-                    if real != answer:
-                        print("\033[1;31mThe Model is wrong\033[0m")
-                        flag = False
-                        break
-
-                if flag:
+                if "NO" in answer:
+                    print("\nThe model predicted: NO\n")
+                    print("\033[1;31mThe Model is wrong\033[0m")
+                else:
+                    print("\nThe model predicted: YES\n")
                     print("\033[1;32mThe Model is right\033[0m")
                     right += 1
 
@@ -105,49 +94,3 @@ def eval_all():
 
 eval_all()
 
-
-def eval_test():
-    with open(data_path, 'r', encoding='utf-8') as f:
-        obj_line = f.readline()
-        obj = json.loads(obj_line)
-        line = obj["description"]
-        data_type = obj["data_type"]
-
-        if data_type == 'person':
-            prompt = ("Your task is to generate a full-body close up photograph of a"
-                      " person which describes the following: ") + line
-        prompt_answer(prompt)
-
-    return line, data_type
-
-
-def eval_single():
-    line, data_type = eval_test()
-
-    # \d+ = number, \s+ = spaces, ([A-Za-z]+) → captures the next word after the number into a group
-    objs = re.findall(r'\d+\s+([A-Za-z]+)', line)
-    numbers = re.findall(r'\d+', line)
-
-    question = "\nHow many of the following items appear in the picture?"
-    for i, word in enumerate(objs):
-        question += f"\n{i+1}.{word}"
-    question += (f"\nAnswer just in numbers based on the order of appearance."
-                 f"\nYou should take as much time as u can to be 100% sure with your answer.")
-
-    prompt = "your task is to answer the following question: " + question
-
-    answer = model_answer(prompt=prompt, img_path='gemini_img_after/1_out_of_150.png')
-
-    numbers_in_answer = re.findall(r'\d+', answer)
-    print(f"The numbers the model predicted are: {numbers_in_answer}\n")
-
-    # zip will work because they have the same size
-    for real_data, answer in zip(numbers, numbers_in_answer):
-        if real_data != answer:
-            print("\033[1;31mThe Model is wrong\033[0m")
-            return False
-
-    print("\033[1;32mThe Model is right\033[0m")
-    return True
-
-#eval_single()
