@@ -1,4 +1,4 @@
-# NLP Project: Testing Google's Gemini Model
+# NLP Project
 This project demonstrates how Google's Gemini model struggles to generate accurate images
 from prompts containing unseen or unusual data. The focus is on testing the model with
 unusual human features, atypical objects, or other challenging scenarios.
