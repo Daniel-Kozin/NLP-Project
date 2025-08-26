@@ -19,7 +19,6 @@ The dataset contains entries describing challenging prompts. Each entry has the 
 | Field       | Description                                         |
 |------------|-----------------------------------------------------|
 | description | Text describing the object to generate.             |
-| data_type   | Type of the prompt, e.g., "person"       |
 | difficulty  | Estimated difficulty of the prompt for the AI model. |
 
 > The dataset can be expanded with any prompts you want to test, allowing flexible experimentation.
@@ -36,8 +35,13 @@ GEMINI_API_KEY=your_key
 
 You need a valid Google Gemini API key. You can get one from:
 [Gemini API Key & Usage](https://aistudio.google.com/apikey)
-
-### 3. Run the evaluation script
+### 3. Install needed libraries
+You need to use at least python 3.9 and in the terminal run
+```env
+pip install pillow
+pip install -q -U google-genai
+```
+### 4. Run the evaluation script
 Run the main script with:
 
 ```
@@ -60,4 +64,4 @@ There are two main approaches you can use:
    By increasing this value (e.g., to `3` or `4`), you can quickly generate a large volume of data.  
    This method can also be combined with the first approach for even greater flexibility.
 
-The code also ensures that **no duplicate lines are generated** — every entry will be unique.
+The code also ensures that **no duplicate lines are generated** - every entry will be unique.
