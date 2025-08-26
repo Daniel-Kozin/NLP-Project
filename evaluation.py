@@ -70,7 +70,6 @@ def model_answer(prompt, img_path, model="gemini-2.5-flash"):
         ]
     )
 
-    print(response.text)
     return response.text
 
 

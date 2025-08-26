@@ -16,18 +16,18 @@ of course the prompt itself is much more detailed.
 ## Dataset
 The dataset contains entries describing challenging prompts. Each entry has the following fields:
 
-| Field       | Description                                          |
-|------------|------------------------------------------------------|
-| description | Text describing the object to generate.              |
-| data_type   | Type of the prompt, e.g., "person" or "clock".       |
+| Field       | Description                                         |
+|------------|-----------------------------------------------------|
+| description | Text describing the object to generate.             |
+| data_type   | Type of the prompt, e.g., "person"       |
 | difficulty  | Estimated difficulty of the prompt for the AI model. |
 
 > The dataset can be expanded with any prompts you want to test, allowing flexible experimentation.
 
 ## How to Run
 Follow these steps to test prompts with Gemini:
-
-### 1. Set up your API key
+### 1. create a folder named `gemini_img`
+### 2. Set up your API key
 Create a `.env` file in the project root with the following content:
 
 ```
@@ -37,17 +37,27 @@ GEMINI_API_KEY=your_key
 You need a valid Google Gemini API key. You can get one from:
 [Gemini API Key & Usage](https://aistudio.google.com/apikey)
 
-### 2. Run the evaluation script
+### 3. Run the evaluation script
 Run the main script with:
 
 ```
 python run_eval.py
 ```
 
-The results (and accuracy) will appear directly in your terminal, and the generated images will be saved in the `gemini_img` folder.
+The results (and accuracy) will appear directly in your terminal, and the generated images will be saved in the
+`gemini_img` folder.
 
-## References
-- Image understanding guide: [Gemini Image API](https://ai.google.dev/gemini-api/docs/image-understanding)  
-- Official API documentation: [Gemini API](https://ai.google.dev/gemini-api/docs/api-key)  
-- API usage and billing: [Gemini Usage & Billing](https://aistudio.google.com/usage?project=gen-lang-client-0672115561)
+## Data Generation
 
+We have implemented a flexible way to generate an **infinite amount of data** using the script [`generate_data.py`](./generate_data.py).  
+There are two main approaches you can use:
+
+1. **Expanding the count arrays**  
+   Each item has its own count array (e.g., `eye_count`). By simply increasing the range of these arrays, you can generate as many variations as needed.
+
+2. **Using `person_data_example`**  
+   The function `person_data_example` accepts the number of items to generate as its second argument.  
+   By increasing this value (e.g., to `3` or `4`), you can quickly generate a large volume of data.  
+   This method can also be combined with the first approach for even greater flexibility.
+
+The code also ensures that **no duplicate lines are generated** — every entry will be unique.

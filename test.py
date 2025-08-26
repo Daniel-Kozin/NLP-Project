@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
-
 # Load API key from .env file
 load_dotenv()
 api_key = os.getenv("API_KEY")

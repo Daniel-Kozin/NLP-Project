@@ -1,12 +1,210 @@
-{"description": "A person with 11 fingers (including thumbs) on one hand.", "data_type": "person"}
-{"description": "A person with 10 eyes.", "data_type": "person"}
-{"description": "A person with 8 ears.", "data_type": "person"}
-{"description": "A person with 7 glasses.", "data_type": "person"}
-{"description": "A person with 9 ears.", "data_type": "person"}
-{"description": "A person with 3 legs.", "data_type": "person"}
-{"description": "A person with 5 legs.", "data_type": "person"}
-{"description": "A person with 3 hands.", "data_type": "person"}
-{"description": "A person with 8 legs.", "data_type": "person"}
-{"description": "A person with 3 heads.", "data_type": "person"}
-{"description": "An analog clock which shows the time 03:20.", "data_type": "clock"}
-{"description": "An analog clock which shows the time 06:30.", "data_type": "clock"}
+{"description": "A person with 1 eyes.", "difficulty": "Medium"}
+{"description": "A person with 1 glasses.", "difficulty": "Easy"}
+{"description": "A person with 1 fingers (including thumbs) on one hand.", "difficulty": "Medium"}
+{"description": "A person with 1 ears.", "difficulty": "Easy"}
+{"description": "A person with 2 eyes.", "difficulty": "Easy"}
+{"description": "A person with 2 glasses.", "difficulty": "Medium"}
+{"description": "A person with 2 fingers (including thumbs) on one hand.", "difficulty": "Medium"}
+{"description": "A person with 2 ears.", "difficulty": "Easy"}
+{"description": "A person with 3 eyes.", "difficulty": "Medium"}
+{"description": "A person with 3 glasses.", "difficulty": "Medium"}
+{"description": "A person with 3 fingers (including thumbs) on one hand.", "difficulty": "Medium"}
+{"description": "A person with 3 ears.", "difficulty": "Medium"}
+{"description": "A person with 4 eyes.", "difficulty": "Medium"}
+{"description": "A person with 4 glasses.", "difficulty": "Medium"}
+{"description": "A person with 4 fingers (including thumbs) on one hand.", "difficulty": "Medium"}
+{"description": "A person with 4 ears.", "difficulty": "Medium"}
+{"description": "A person with 5 eyes.", "difficulty": "Medium"}
+{"description": "A person with 5 glasses.", "difficulty": "Medium"}
+{"description": "A person with 5 fingers (including thumbs) on one hand.", "difficulty": "Easy"}
+{"description": "A person with 5 ears.", "difficulty": "Medium"}
+{"description": "A person with 6 eyes.", "difficulty": "Medium"}
+{"description": "A person with 6 glasses.", "difficulty": "Hard"}
+{"description": "A person with 6 fingers (including thumbs) on one hand.", "difficulty": "Medium"}
+{"description": "A person with 6 ears.", "difficulty": "Medium"}
+{"description": "A person with 7 eyes.", "difficulty": "Hard"}
+{"description": "A person with 7 glasses.", "difficulty": "Hard"}
+{"description": "A person with 7 fingers (including thumbs) on one hand.", "difficulty": "Medium"}
+{"description": "A person with 7 ears.", "difficulty": "Hard"}
+{"description": "A person with 8 eyes.", "difficulty": "Hard"}
+{"description": "A person with 8 glasses.", "difficulty": "Hard"}
+{"description": "A person with 8 fingers (including thumbs) on one hand.", "difficulty": "Medium"}
+{"description": "A person with 8 ears.", "difficulty": "Hard"}
+{"description": "A person with 9 eyes.", "difficulty": "Hard"}
+{"description": "A person with 9 glasses.", "difficulty": "Hard"}
+{"description": "A person with 9 fingers (including thumbs) on one hand.", "difficulty": "Medium"}
+{"description": "A person with 9 ears.", "difficulty": "Hard"}
+{"description": "A person with 10 eyes.", "difficulty": "Hard"}
+{"description": "A person with 10 glasses.", "difficulty": "Hard"}
+{"description": "A person with 10 fingers (including thumbs) on one hand.", "difficulty": "Medium"}
+{"description": "A person with 10 ears.", "difficulty": "Hard"}
+{"description": "A person with 11 eyes.", "difficulty": "Hard"}
+{"description": "A person with 11 glasses.", "difficulty": "Hard"}
+{"description": "A person with 11 fingers (including thumbs) on one hand.", "difficulty": "Hard"}
+{"description": "A person with 11 ears.", "difficulty": "Hard"}
+{"description": "A person with 12 eyes.", "difficulty": "Hard"}
+{"description": "A person with 12 glasses.", "difficulty": "Hard"}
+{"description": "A person with 12 fingers (including thumbs) on one hand.", "difficulty": "Hard"}
+{"description": "A person with 12 ears.", "difficulty": "Hard"}
+{"description": "A person with 13 eyes.", "difficulty": "Hard"}
+{"description": "A person with 13 glasses.", "difficulty": "Hard"}
+{"description": "A person with 13 fingers (including thumbs) on one hand.", "difficulty": "Hard"}
+{"description": "A person with 13 ears.", "difficulty": "Hard"}
+{"description": "A person with 14 eyes.", "difficulty": "Hard"}
+{"description": "A person with 14 glasses.", "difficulty": "Hard"}
+{"description": "A person with 14 fingers (including thumbs) on one hand.", "difficulty": "Hard"}
+{"description": "A person with 14 ears.", "difficulty": "Hard"}
+{"description": "A person with 15 eyes.", "difficulty": "Hard"}
+{"description": "A person with 15 glasses.", "difficulty": "Hard"}
+{"description": "A person with 15 fingers (including thumbs) on one hand.", "difficulty": "Hard"}
+{"description": "A person with 15 ears.", "difficulty": "Hard"}
+{"description": "A person with 16 eyes.", "difficulty": "Hard"}
+{"description": "A person with 16 glasses.", "difficulty": "Hard"}
+{"description": "A person with 16 fingers (including thumbs) on one hand.", "difficulty": "Hard"}
+{"description": "A person with 16 ears.", "difficulty": "Hard"}
+{"description": "A person with 17 eyes.", "difficulty": "Hard"}
+{"description": "A person with 17 glasses.", "difficulty": "Hard"}
+{"description": "A person with 17 fingers (including thumbs) on one hand.", "difficulty": "Hard"}
+{"description": "A person with 17 ears.", "difficulty": "Hard"}
+{"description": "A person with 18 eyes.", "difficulty": "Hard"}
+{"description": "A person with 18 glasses.", "difficulty": "Hard"}
+{"description": "A person with 18 fingers (including thumbs) on one hand.", "difficulty": "Hard"}
+{"description": "A person with 18 ears.", "difficulty": "Hard"}
+{"description": "A person with 19 eyes.", "difficulty": "Hard"}
+{"description": "A person with 19 glasses.", "difficulty": "Hard"}
+{"description": "A person with 19 fingers (including thumbs) on one hand.", "difficulty": "Hard"}
+{"description": "A person with 19 ears.", "difficulty": "Hard"}
+{"description": "A person with 20 eyes.", "difficulty": "Hard"}
+{"description": "A person with 20 glasses.", "difficulty": "Hard"}
+{"description": "A person with 20 fingers (including thumbs) on one hand.", "difficulty": "Hard"}
+{"description": "A person with 20 ears.", "difficulty": "Hard"}
+{"description": "A person with 1 hands.", "difficulty": "Medium"}
+{"description": "A person with 1 legs.", "difficulty": "Medium"}
+{"description": "A person with 1 heads.", "difficulty": "Easy"}
+{"description": "A person with 1 feet.", "difficulty": "Medium"}
+{"description": "A person with 2 hands.", "difficulty": "Easy"}
+{"description": "A person with 2 legs.", "difficulty": "Easy"}
+{"description": "A person with 2 heads.", "difficulty": "Medium"}
+{"description": "A person with 2 feet.", "difficulty": "Easy"}
+{"description": "A person with 3 hands.", "difficulty": "Medium"}
+{"description": "A person with 3 legs.", "difficulty": "Medium"}
+{"description": "A person with 3 heads.", "difficulty": "Medium"}
+{"description": "A person with 3 feet.", "difficulty": "Medium"}
+{"description": "A person with 4 hands.", "difficulty": "Medium"}
+{"description": "A person with 4 legs.", "difficulty": "Medium"}
+{"description": "A person with 4 heads.", "difficulty": "Medium"}
+{"description": "A person with 4 feet.", "difficulty": "Medium"}
+{"description": "A person with 5 hands.", "difficulty": "Medium"}
+{"description": "A person with 5 legs.", "difficulty": "Medium"}
+{"description": "A person with 5 heads.", "difficulty": "Medium"}
+{"description": "A person with 5 feet.", "difficulty": "Medium"}
+{"description": "A person with 6 hands.", "difficulty": "Medium"}
+{"description": "A person with 6 legs.", "difficulty": "Medium"}
+{"description": "A person with 6 heads.", "difficulty": "Hard"}
+{"description": "A person with 6 feet.", "difficulty": "Medium"}
+{"description": "A person with 7 hands.", "difficulty": "Hard"}
+{"description": "A person with 7 legs.", "difficulty": "Hard"}
+{"description": "A person with 7 heads.", "difficulty": "Hard"}
+{"description": "A person with 7 feet.", "difficulty": "Hard"}
+{"description": "A person with 8 hands.", "difficulty": "Hard"}
+{"description": "A person with 8 legs.", "difficulty": "Hard"}
+{"description": "A person with 8 heads.", "difficulty": "Hard"}
+{"description": "A person with 8 feet.", "difficulty": "Hard"}
+{"description": "A person with 9 hands.", "difficulty": "Hard"}
+{"description": "A person with 9 legs.", "difficulty": "Hard"}
+{"description": "A person with 9 heads.", "difficulty": "Hard"}
+{"description": "A person with 9 feet.", "difficulty": "Hard"}
+{"description": "A person with 10 hands.", "difficulty": "Hard"}
+{"description": "A person with 10 legs.", "difficulty": "Hard"}
+{"description": "A person with 10 heads.", "difficulty": "Hard"}
+{"description": "A person with 10 feet.", "difficulty": "Hard"}
+{"description": "A person with 11 hands.", "difficulty": "Hard"}
+{"description": "A person with 11 legs.", "difficulty": "Hard"}
+{"description": "A person with 11 heads.", "difficulty": "Hard"}
+{"description": "A person with 11 feet.", "difficulty": "Hard"}
+{"description": "A person with 12 hands.", "difficulty": "Hard"}
+{"description": "A person with 12 legs.", "difficulty": "Hard"}
+{"description": "A person with 12 heads.", "difficulty": "Hard"}
+{"description": "A person with 12 feet.", "difficulty": "Hard"}
+{"description": "A person with 13 hands.", "difficulty": "Hard"}
+{"description": "A person with 13 legs.", "difficulty": "Hard"}
+{"description": "A person with 13 heads.", "difficulty": "Hard"}
+{"description": "A person with 13 feet.", "difficulty": "Hard"}
+{"description": "A person with 14 hands.", "difficulty": "Hard"}
+{"description": "A person with 14 legs.", "difficulty": "Hard"}
+{"description": "A person with 14 heads.", "difficulty": "Hard"}
+{"description": "A person with 14 feet.", "difficulty": "Hard"}
+{"description": "A person with 15 hands.", "difficulty": "Hard"}
+{"description": "A person with 15 legs.", "difficulty": "Hard"}
+{"description": "A person with 15 heads.", "difficulty": "Hard"}
+{"description": "A person with 15 feet.", "difficulty": "Hard"}
+{"description": "A person with 16 hands.", "difficulty": "Hard"}
+{"description": "A person with 16 legs.", "difficulty": "Hard"}
+{"description": "A person with 16 heads.", "difficulty": "Hard"}
+{"description": "A person with 16 feet.", "difficulty": "Hard"}
+{"description": "A person with 17 hands.", "difficulty": "Hard"}
+{"description": "A person with 17 legs.", "difficulty": "Hard"}
+{"description": "A person with 17 heads.", "difficulty": "Hard"}
+{"description": "A person with 17 feet.", "difficulty": "Hard"}
+{"description": "A person with 18 hands.", "difficulty": "Hard"}
+{"description": "A person with 18 legs.", "difficulty": "Hard"}
+{"description": "A person with 18 heads.", "difficulty": "Hard"}
+{"description": "A person with 18 feet.", "difficulty": "Hard"}
+{"description": "A person with 19 hands.", "difficulty": "Hard"}
+{"description": "A person with 19 legs.", "difficulty": "Hard"}
+{"description": "A person with 19 heads.", "difficulty": "Hard"}
+{"description": "A person with 19 feet.", "difficulty": "Hard"}
+{"description": "A person with 20 hands.", "difficulty": "Hard"}
+{"description": "A person with 20 legs.", "difficulty": "Hard"}
+{"description": "A person with 20 heads.", "difficulty": "Hard"}
+{"description": "A person with 20 feet.", "difficulty": "Hard"}
+{"description": "A person with 22 glasses and 29 fingers (including thumbs) on one hand.", "difficulty": "Hard+"}
+{"description": "A person with 17 eyes and 5 ears.", "difficulty": "Hard+"}
+{"description": "A person with 27 glasses and 14 ears.", "difficulty": "Hard+"}
+{"description": "A person with 16 eyes and 25 fingers (including thumbs) on one hand.", "difficulty": "Hard+"}
+{"description": "A person with 13 glasses and 25 fingers (including thumbs) on one hand.", "difficulty": "Hard+"}
+{"description": "A person with 13 glasses and 29 fingers (including thumbs) on one hand.", "difficulty": "Hard+"}
+{"description": "A person with 15 ears and 16 glasses.", "difficulty": "Hard+"}
+{"description": "A person with 14 glasses and 26 fingers (including thumbs) on one hand.", "difficulty": "Hard+"}
+{"description": "A person with 8 fingers (including thumbs) on one hand and 18 ears.", "difficulty": "Hard+"}
+{"description": "A person with 5 eyes and 10 ears.", "difficulty": "Hard+"}
+{"description": "A person with 13 fingers (including thumbs) on one hand and 24 glasses.", "difficulty": "Hard+"}
+{"description": "A person with 29 glasses and 29 ears.", "difficulty": "Hard+"}
+{"description": "A person with 16 eyes and 5 ears.", "difficulty": "Hard+"}
+{"description": "A person with 4 eyes and 21 ears.", "difficulty": "Hard+"}
+{"description": "A person with 13 fingers (including thumbs) on one hand and 6 glasses.", "difficulty": "Hard+"}
+{"description": "A person with 22 eyes and 7 glasses.", "difficulty": "Hard+"}
+{"description": "A person with 17 glasses and 9 eyes.", "difficulty": "Hard+"}
+{"description": "A person with 25 eyes and 29 ears.", "difficulty": "Hard+"}
+{"description": "A person with 11 eyes and 8 ears.", "difficulty": "Hard+"}
+{"description": "A person with 5 fingers (including thumbs) on one hand and 16 glasses.", "difficulty": "Hard+"}
+{"description": "A person with 29 eyes and 18 fingers (including thumbs) on one hand.", "difficulty": "Hard+"}
+{"description": "A person with 24 glasses and 8 eyes.", "difficulty": "Hard+"}
+{"description": "A person with 21 ears and 17 eyes.", "difficulty": "Hard+"}
+{"description": "A person with 5 ears and 28 eyes.", "difficulty": "Hard+"}
+{"description": "A person with 26 eyes and 6 glasses.", "difficulty": "Hard+"}
+{"description": "A person with 6 legs and 16 hands.", "difficulty": "Hard+"}
+{"description": "A person with 22 feet and 6 heads.", "difficulty": "Hard+"}
+{"description": "A person with 9 legs and 10 hands.", "difficulty": "Hard+"}
+{"description": "A person with 4 legs and 10 feet.", "difficulty": "Hard+"}
+{"description": "A person with 20 legs and 22 feet.", "difficulty": "Hard+"}
+{"description": "A person with 25 feet and 17 hands.", "difficulty": "Hard+"}
+{"description": "A person with 18 hands and 12 feet.", "difficulty": "Hard+"}
+{"description": "A person with 16 feet and 28 heads.", "difficulty": "Hard+"}
+{"description": "A person with 9 heads and 2 feet.", "difficulty": "Hard+"}
+{"description": "A person with 6 heads and 13 hands.", "difficulty": "Hard+"}
+{"description": "A person with 3 feet and 11 legs.", "difficulty": "Hard+"}
+{"description": "A person with 6 heads and 6 hands.", "difficulty": "Hard+"}
+{"description": "A person with 3 feet and 28 hands.", "difficulty": "Hard+"}
+{"description": "A person with 5 legs and 26 feet.", "difficulty": "Hard+"}
+{"description": "A person with 3 hands and 16 heads.", "difficulty": "Hard+"}
+{"description": "A person with 26 hands and 29 feet.", "difficulty": "Hard+"}
+{"description": "A person with 5 legs and 13 hands.", "difficulty": "Hard+"}
+{"description": "A person with 28 heads and 27 feet.", "difficulty": "Hard+"}
+{"description": "A person with 3 hands and 3 heads.", "difficulty": "Hard+"}
+{"description": "A person with 23 feet and 14 legs.", "difficulty": "Hard+"}
+{"description": "A person with 18 feet and 5 legs.", "difficulty": "Hard+"}
+{"description": "A person with 10 heads and 23 hands.", "difficulty": "Hard+"}
+{"description": "A person with 16 legs and 22 feet.", "difficulty": "Hard+"}
+{"description": "A person with 29 hands and 27 legs.", "difficulty": "Hard+"}
+{"description": "A person with 11 heads and 28 feet.", "difficulty": "Hard+"}
